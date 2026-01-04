@@ -19,3 +19,19 @@
 #copyright a{color:#666}
 #icon{font-size: 48px;color: red;margin: 50 px; align-content: center;}
 #heartspan{align-content: center;text-align: center;margin: 20px;}
+.gift-links {
+  margin-top: 15px;
+}
+
+.gift-links a {
+  color: #ff4d6d;        /* soft romantic pink */
+  font-size: 32px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.gift-links a:hover {
+  color: #ff1e56;
+  transform: scale(1.2);
+}

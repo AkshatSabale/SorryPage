@@ -23,6 +23,13 @@
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
+			<audio id="bg-music" loop preload="auto">
+				<source src="song.mp3" type="audio/mpeg">
+			</audio>
+
+			<button id="play-music-btn" onclick="startMusic()" style="display:none; position:fixed; bottom:20px; right:20px; z-index:999; background: #ff6b6b; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+				<i class="fas fa-play"></i> Play Music
+			</button>
 			<span class="comments">/**</span><br />
 			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
 			<span class="space"/><span class="comments">*/</span><br />
@@ -47,14 +54,23 @@
 			All I want to say is:<br />
 			Baby, I will be by your side forever :)<br />
 			<br>
-			<br>
 			Here are the gifts for apology you can have all of them ;) <br />
-			<a href=""
+			<div class="gift-links">
+				<a href="https://www.amazon.in/BLUE-TEA-Spearmint-Caffeine-Free-Ingredients/dp/B09YNWZC9V/ref=sr_1_1_sspa?crid=2DZ8URLWOSJYR&dib=eyJ2IjoiMSJ9.arBPunUallpPiz035JiSamjkme7s7q3OhuZVW6n9UWQ0p2BrsUbJzUe6G8w4Y0uOXv9xItOTQdyC0UrFh7AfF7wqMB4v9BlHAxhLCL4j9f8TbJ-rBrJvv4eGumg9ou5fTEwx2lDN_P57DGkUQEl_7U0ypz4WwqSI3gtCM4AQQ4WY9X-ESSwwsTwrC1-A2bkkK5DwhiexEe2QTV8Cm8Uc-mqX3UAFBtBWsWr2XtDz5xBSidYkl1pW6AZkbMGUjx0_7ckrR2TWGH7eazF4pG3W2iQgGSest5Ce0ApFlVtKPA4.b55WE1Ic0zoT2Nc5UaEHKx5DVg8xWK9DMv3XbsFJ6MI&dib_tag=se&keywords=spearmint%2Btea&qid=1767536216&sprefix=spearmin%2Caps%2C360&sr=8-1-spons&aref=AzZQtS2VkJ&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank" title="Gift 1">
+					<i class="fas fa-gift"></i>
+				</a>
+				<a href="https://www.amazon.in/Invite-Refillable-Traveler-Sketchbooks-Journal-London/dp/B0FRY67HFJ/ref=sr_1_36?crid=1GV96FS6NIRME&dib=eyJ2IjoiMSJ9.AIqazIVthwExqQOE160KeJj436qPd-7LNzGHoUoEjHGGOxO83za5z2ue6oqjyrwVTwp6iSs4GodHiKIbuVhnEor8AmwiTl7gOJp3TpD6ZIKbe3Z7spHkHMpNJQPKynh7-ZXRClM0VHzk5shNluSSVzlUkG1Yyvtj0gsHM6u5TMZtbRgbSIp0ODUfqU4YNkzJEmXblM61e-7WpEFwHgR34Gl4Ubf_AaWQq1mTpxcGbyugvEpSiGeebUe0BF1Zgm3s8KTWAVPpu7rRCmz6c05rhsSC7VWdUfBHNsbGDkIS6Vg.87ebo_Ux9ePahQnPR44pioTPrtD2QJdK41tValE4ZQk&dib_tag=se&keywords=diary&qid=1767536713&sprefix=diar%2Caps%2C390&sr=8-36&th=1" target="_blank" title="Gift 2">
+					<i class="fas fa-gift"></i>
+				</a>
+				<a href="https://www.amazon.in/aGIOGIO-Portable-Menstrual-Temperature-Adjustment/dp/B09XMJBK8V/ref=sr_1_2_sspa?crid=3MAG8NI9C0DAX&dib=eyJ2IjoiMSJ9.9-Kx9xSehhZwjfWVDGrE611_F0YN29OK-JKwkybMuKuCY7mMyPvRQPyDGEIRDZQ6ncyDAZ3mksxlf4mnCVUy6zTJLABDqnOhVet7ell2Pl8FnZ_scg-nWbZzCZS2J0gwvSvZLJQ6S4qLekwhpYlMr_KtQRs97vvtAwIAG3IumW8h0mH_1sB-RoRuyvh63kivrOiLajDV2EJGXJcR18zkuNBNGH0iAr4EvQ57cr0Hgsor5yS6VetTz0-VqttaMsvl-DSbo36-HSHCk2Auy4t2RXZzi-eaNFdyXor6PMTpdI8.siALcZUpCxIiDAR9gNGQ378S0nJkJX6h1Bw0Gohk63M&dib_tag=se&keywords=heatpad+for+periods&qid=1767536145&sprefix=heatpad+%2Caps%2C360&sr=8-2-spons&aref=VjPBJwQvKL&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" title="Gift 3">
+					<i class="fas fa-gift"></i>
+				</a>
+			</div>
 			<br>
 			Now If you want to see some of our beautiful memories you can touch the heart below<br />
 			<br>
 			<span id="heartspan">
-			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			<a href="collage.png"><i class="fas fa-heart" id="icon"></i></a>
 			</span>
 		</div>
 		<div id="loveHeart">
@@ -65,7 +81,7 @@
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					I LOVE YOU SO MUCH<br/>
+					I LIKE YOU SO MUCH<br/>
 					<div class="signature">-Akshat</div>
 				</div>
 			</div>
@@ -106,5 +122,69 @@ if (!document.createElement('canvas').getContext) {
 	$("#code").typewriter();
 }
 </script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.getElementById("bg-music");
+      const playBtn = document.getElementById("play-music-btn");
+
+      // Try to play immediately with volume 0 (muted)
+      audio.volume = 0.1;
+      audio.muted = false;
+
+      // Function to play audio
+      function playAudio() {
+          const playPromise = audio.play();
+
+          if (playPromise !== undefined) {
+              playPromise.then(() => {
+                  // Successfully started playing
+                  console.log("Audio playing automatically");
+                  playBtn.style.display = "none";
+              }).catch(error => {
+                  // Autoplay was prevented
+                  console.log("Autoplay prevented:", error);
+
+                  // Show play button
+                  playBtn.style.display = "block";
+
+                  // Try again on user interaction
+                  document.addEventListener('click', function userInteractionHandler() {
+                      audio.play().then(() => {
+                          playBtn.style.display = "none";
+                          console.log("Audio started after user interaction");
+                      }).catch(e => {
+                          console.log("Still couldn't play:", e);
+                      });
+                      // Remove listener after first interaction
+                      document.removeEventListener('click', userInteractionHandler);
+                  }, { once: true });
+              });
+          }
+      }
+
+      // Try to play when page loads
+      playAudio();
+
+      // Expose startMusic globally
+      window.startMusic = function () {
+          audio.play().then(() => {
+              playBtn.style.display = "none";
+          }).catch(error => {
+              console.error("Could not play audio:", error);
+          });
+      };
+  });
+
+  // Alternative: Try to play when any user interaction occurs
+  document.addEventListener('click', function firstClick() {
+      const audio = document.getElementById("bg-music");
+      if (audio.paused) {
+          audio.play().catch(e => console.log("Play failed:", e));
+      }
+      document.removeEventListener('click', firstClick);
+  }, { once: true });
+</script>
+
 </body>
 </html>
